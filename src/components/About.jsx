@@ -52,10 +52,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 <li>
                   <span className="fw-600 me-2">Name:</span>Kyle Lau
                 </li>
-                <li>
+                {/* <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">kaiyolau@gmail.com</a>
-                </li>
+                  <a href="mailto:chat@simone.com">Not exploring email addresses on the internet</a>
+                </li> */}
                 <li className="border-0">
                   <span className="fw-600 me-2">From:</span>Vancouver,
                   British Columbia, Canada

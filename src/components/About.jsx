@@ -29,7 +29,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
           {/* About me content start */}
           <div className="col-lg-7 col-xl-8 text-center text-lg-start">
             <p className={darkTheme ? "text-white-50" : ""}>
-            Hello, my name is Kyle, I'm a full-stack software developer based in Vancouver. I like to play electric guitar and Cello, My favourite food is torched Sushi, I also enjoy love summer and hiking. Something interesting about me: I released my album "Kyle Lau" on Spotify.
+            Hello, my name is Kyle, I'm a full-stack software developer based in Vancouver. I like to play electric guitar and Cello, My favourite food is torched Sushi, I also enjoy summer and hiking. Something interesting about me: I released my album "Kyle Lau" on Spotify.
             </p>
             {/* <p className={darkTheme ? "text-white-50" : ""}>
             Over the course of my career, I have built three web applications from backend to frontend. In doing so,

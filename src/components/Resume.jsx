@@ -22,18 +22,17 @@ const Resume = ({ classicHeader, darkTheme }) => {
   const experienceDetails = [
     {
       yearRange: "February 2023 - present",
-      title: "Open-Source Full-Stack Developer",
+      title: "Full-Stack Developer",
       place: "Opentree Education",
       desc: "Designing a graded assessment system within the App will enable users to track their progress and receive personalized feedback.",
       desc2: "Agile environments and collaborating with diverse teams.",
       desc3: "Participating in sprint planning, daily stand-ups, and retrospectives ensure project deliverables met timelines and quality standards."
     },
     {
-      yearRange: "2018 - 2022",
-      title: "Music & Sound Engineer",
-      place: "ArtiMusic Academy",
-      desc: "Expertise in vocal recording, audio editing, mixing and mastering for final production.",
-      desc2: "Experienced music instructor offering guitar, piano, and cello lessons to students of all ages, from individual to group settings."
+      yearRange: "Mar 2022 - Aug 2022",
+      title: "Coding instructor & Assistant",
+      place: "Code Ninjas Richmond ",
+      desc: "Experienced coding instructor taught students the fundamentals of HTML, CSS, and JavaScript to enable them to create functional websites for the age group of teenagers.",
     }
   ];
 

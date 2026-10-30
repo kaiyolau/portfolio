@@ -37,7 +37,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         link: "https://soniphoria.app/",
       },
       thumbImage: "images/projects/soniphoria_1.png",
-      sliderImages: ["images/projects/soniphoria_2.png"],
+      sliderImages: [
+        "images/projects/soniphoria_2.png",
+        "images/projects/soniphoria_3.png",
+        "images/projects/soniphoria_4.png",
+      ],
       categories: [filters.REACT, filters.TYPESCRIPT, filters.PYTHON, filters.POSTGRES],
     },
     {

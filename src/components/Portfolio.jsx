@@ -147,32 +147,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       categories: [filters.REACT, filters.NODE, filters.JAVASCRIPT, filters.MATERIALUI, filters.MONGO, filters.HTML],
     },
-    {
-      title: "Travel advisor website",
-      projectInfo:
-        "a Google Maps search feature that dynamically displays nearby businesses' information, categorized by restaurants, attractions, hotels, cities, and weather based on the user's location. It also includes an advanced filter feature based on businesses' ratings.",
-      // client: "Ruby Clinton",
-      technologies: "HTML5, CSS, REACT, MATERIAL-UI, AXIOS",
-      // industry: "Art & Design",
-      date: "August 20, 2022",
-      url: {
-        name: "https://map-manger.herokuapp.com/",
-        link: "https://map-manger.herokuapp.com/",
-      },
-      // socialLinks: {
-      //   facebook: "http://www.facebook.com/",
-      //   twitter: "http://www.twitter.com/",
-      //   google: "http://www.google.com/",
-      //   instagram: "http://www.instagram.com/",
-      //   mail: "mailto:example@gmail.com",
-      // },
-      thumbImage: "images/projects/map_2.png",
-      sliderImages: [
-        "images/projects/map_1.png",
-        "images/projects/map_3.png",
-      ],
-      categories: [filters.REACT, filters.JAVASCRIPT, filters.MATERIALUI, filters.HTML],
-    },
     // {
     //   title: "Project Title 4",
     //   projectInfo:

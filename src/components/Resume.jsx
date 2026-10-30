@@ -4,7 +4,14 @@ import resumeFile from "../documents/kyle_resume+coverLetter.pdf";
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "April - August, 2022",
+      yearRange: "Graduated June 2026",
+      title: "Computer Systems Technology (Information Systems option)",
+      place: "British Columbia Institute of Technology (BCIT)",
+      desc: "COMP 3910 (Full-Stack Development for Enterprise Systems): Jakarta Faces, CDI, JDBC, JPA, JAX-RS.",
+      desc2: "COMP 4911 (Developing Enterprise Services): EJB, JPQL, EJB security and transactions, Unified Process.",
+    },
+    {
+      yearRange: "April - September, 2022",
       title: "CodeCore Developer Bootcamp",
       place: "CodeCore College in Vancouver",
       desc: "Learning HTML, CSS, JavaScript, Node.js, Ruby on Rails, React.js and gaining hands-on experience with these languages involves acquiring a strong foundation in web development.",
@@ -21,12 +28,20 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const experienceDetails = [
     {
-      yearRange: "February 2023 - present",
-      title: "Full-Stack Developer",
+      yearRange: "March 2025 - present",
+      title: "Founder & CEO / Lead Software Engineer",
+      place: "Soniphoria (soniphoria.app)",
+      desc: "Founded and lead development of an AI-powered music education platform for students, parents, teachers and schools, grown to approximately 500 active users, with up to 6 partner local music schools.",
+      desc2: "React + TypeScript web app, FastAPI back end with an arq/Redis worker, Supabase PostgreSQL (95 migrations, Row-Level Security), Stripe subscriptions, Cloudflare Workers + R2.",
+      desc3: "Dockerized API and worker services, GitHub Actions CI, and 350+ Vitest and pytest test files."
+    },
+    {
+      yearRange: "February 2023 - May 2023",
+      title: "Full-Stack Developer Intern",
       place: "Opentree Education",
-      desc: "Designing a graded assessment system within the App will enable users to track their progress and receive personalized feedback.",
-      desc2: "Agile environments and collaborating with diverse teams.",
-      desc3: "Participating in sprint planning, daily stand-ups, and retrospectives ensure project deliverables met timelines and quality standards."
+      desc: "Built a graded assessment feature with progress tracking and personalized feedback (TypeScript, React, Material-UI, Express, MySQL, Docker).",
+      desc2: "Fixed bugs and submitted GitHub pull requests.",
+      desc3: "Took part in sprint planning, daily stand-ups, and retrospectives."
     },
     {
       yearRange: "Mar 2022 - Aug 2022",

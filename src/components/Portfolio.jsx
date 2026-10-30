@@ -14,6 +14,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     NODE: "Node",
     REACT: "React",
     JAVASCRIPT: "Javascript",
+    TYPESCRIPT: "TypeScript",
+    PYTHON: "Python",
+    JAVA: "Java",
     MATERIALUI: `Material-UI`,
     RUBY: "RubyOnRails",
     POSTGRES: "Postgresql",
@@ -22,17 +25,69 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
+      title: "Soniphoria",
+      featured: true,
+      projectInfo:
+        "AI-powered music education platform that I founded and lead as CEO and Lead Software Engineer. It serves music students, parents, teachers, and school admins with role-based workflows for homework, practice tracking, and progress reports, and has a bilingual English/Chinese interface. Grown to approximately 500 active users, with up to 6 partner local music schools.",
+      technologies:
+        "REACT, TYPESCRIPT, VITE, TAILWIND CSS, FASTAPI, REDIS, SUPABASE (POSTGRESQL, RLS), STRIPE, CLOUDFLARE WORKERS & R2, DOCKER, GITHUB ACTIONS",
+      date: "March 2025 - Present",
+      url: {
+        name: "https://soniphoria.app/",
+        link: "https://soniphoria.app/",
+      },
+      thumbImage: "images/projects/soniphoria_1.png",
+      sliderImages: ["images/projects/soniphoria_2.png"],
+      categories: [filters.REACT, filters.TYPESCRIPT, filters.PYTHON, filters.POSTGRES],
+    },
+    {
+      title: "Timesheet & Project Management System",
+      projectInfo:
+        "BCIT COMP 4911 team project (20+ students): a web app for timesheets, projects, and work packages. Jakarta EE REST API (JAX-RS, EJB, JPA) on WildFly with MySQL and an ASP.NET Razor Pages front end, containerized with Docker and deployed to OpenShift. I built the work-package module: database tables, role-based access (employees see only their assigned work packages), responsible-engineer assignment, and a rule locking the work-package structure after the first approved charge, with JUnit and REST Assured integration tests.",
+      technologies:
+        "JAKARTA EE, JAX-RS, EJB, JPA, WILDFLY, MYSQL, ASP.NET RAZOR PAGES, DOCKER, OPENSHIFT, JUNIT 5, REST ASSURED",
+      date: "January 2026 - April 2026",
+      urls: [
+        {
+          label: "Frontend",
+          name: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
+          link: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
+        },
+        {
+          label: "Backend",
+          name: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
+          link: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
+        },
+        {
+          label: "GitHub",
+          name: "BCIT-4911/COMP-4911-project",
+          link: "https://github.com/BCIT-4911/COMP-4911-project",
+        },
+      ],
+      thumbImage: "images/projects/comp4911_1.png",
+      sliderImages: ["images/projects/comp4911_2.png"],
+      categories: [filters.JAVA],
+    },
+    {
       title: "Journey Manager",
       projectInfo:
         "The application allows users to share journeys and comments, features user authorization/authentication, integrates Google maps based on the user's location, implements CRUD functionality for journeys and comments, enables liking of content, and supports administration management of the database.",
       // client: "Ruby Clinton",
       technologies: "RUBY ON RAILS, HTML, CSS, BOOTSTRAP, POSTGRESQL",
       // industry: "Art & Design",
-      date: "July 16, 2022",
-      url: {
-        name: "https://journey.herokuapp.com/",
-        link: "https://journey.herokuapp.com/",
-      },
+      date: "August 2022",
+      urls: [
+        {
+          label: "Live",
+          name: "https://journey-rail.onrender.com/",
+          link: "https://journey-rail.onrender.com/",
+        },
+        {
+          label: "GitHub",
+          name: "kaiyolau/journey_rail",
+          link: "https://github.com/kaiyolau/journey_rail",
+        },
+      ],
       // socialLinks: {
       //   facebook: "http://www.facebook.com/",
       //   twitter: "http://www.twitter.com/",
@@ -42,10 +97,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       // },
       thumbImage: "images/projects/journey_2.png",
       sliderImages: [
+        "images/projects/journey_live.png",
         "images/projects/journey_1.png",
         "images/projects/journey_3.png",
       ],
-      categories: [filters.HTML, filters.CSS, filters.RUBY, filters.MATERIALUI, filters.POSTGRES],
+      categories: [filters.HTML, filters.RUBY, filters.POSTGRES],
     },
     {
       title: "Search Nearby Work Website",
@@ -54,11 +110,24 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       // client: "Ruby Clinton",
       technologies: "HTML5, CSS, NODE, REACT, MATERIAL-UI, MONGODB",
       // industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "Search Nearby Work Website",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:7034979441596387328/",
-      },
+      date: "February 2022",
+      urls: [
+        {
+          label: "Live",
+          name: "https://work-search-snw7.onrender.com/",
+          link: "https://work-search-snw7.onrender.com/",
+        },
+        {
+          label: "GitHub",
+          name: "kaiyolau/work_search",
+          link: "https://github.com/kaiyolau/work_search",
+        },
+        {
+          label: "LinkedIn",
+          name: "Project post",
+          link: "https://www.linkedin.com/feed/update/urn:li:activity:7034979441596387328/",
+        },
+      ],
       // socialLinks: {
       //   facebook: "http://www.facebook.com/",
       //   twitter: "http://www.twitter.com/",
@@ -68,6 +137,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       // },
       thumbImage: "images/projects/work_5.png",
       sliderImages: [
+        "images/projects/work_live.png",
         "images/projects/work_4.png",
         "images/projects/work_2.png",
         "images/projects/work_3.png",
@@ -263,7 +333,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           {/* Filter Menu */}
           <ul
             className={
-              "portfolio-menu nav nav-tabs justify-content-center border-bottom-0 mb-5 " +
+              "portfolio-menu nav nav-tabs flex-wrap justify-content-center border-bottom-0 mb-5 " +
               (darkTheme ? "nav-light" : "")
             }
           >
@@ -302,7 +372,16 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                     key={index}
                   >
                     <div className="portfolio-box rounded">
-                      <div className="portfolio-img rounded">
+                      <div className="portfolio-img rounded position-relative">
+                        {project.featured && (
+                          <span
+                            className="badge bg-warning text-dark fw-600 position-absolute"
+                            style={{ top: 10, left: 10, zIndex: 2 }}
+                          >
+                            <i className="fas fa-star me-1" />
+                            Featured
+                          </span>
+                        )}
                         <img
                           onLoad={() => {
                             setimagesLoaded(imagesLoaded + 1);
@@ -332,6 +411,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                       <div className="portfolio-name">
                             <h5 className="fw-400">
                               {project.title}
+                              {project.featured && (
+                                <i className="fas fa-star text-warning ms-2" />
+                              )}
                             </h5>
                       </div>
                     </div>

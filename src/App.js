@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import AboutUs from "./components/About";
 // import Services from "./components/Services";
 import Resume from "./components/Resume";
+import FeaturedProject from "./components/FeaturedProject";
 import Portfolio from "./components/Portfolio";
 // import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -79,6 +80,10 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></AboutUs>
+            <FeaturedProject
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></FeaturedProject>
             {/* <Services
               classicHeader={classicHeader}
               darkTheme={darkTheme}

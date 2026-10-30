@@ -159,13 +159,30 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         >
                           URL:
                         </span>
-                        <a
-                          href={projectDetails?.url?.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {projectDetails?.url?.name}
-                        </a>
+                        {projectDetails?.urls ? (
+                          <ul className="list-unstyled d-inline-block align-top mb-0">
+                            {projectDetails.urls.map((u) => (
+                              <li key={u.link} className="border-0 p-0">
+                                <span className="me-2">{u.label}:</span>
+                                <a
+                                  href={u.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {u.name}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <a
+                            href={projectDetails?.url?.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {projectDetails?.url?.name}
+                          </a>
+                        )}
                       </li>
                     </ul>
                     <div className="row no-gutters align-items-center">

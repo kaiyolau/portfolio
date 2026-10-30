@@ -81,6 +81,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies: "RUBY ON RAILS, HTML, CSS, BOOTSTRAP, POSTGRESQL",
       // industry: "Art & Design",
       date: "August 2022",
+      notice:
+        "Live demo on free hosting: if nobody has used it for a while it sleeps and the first load can take a minute. Demo login: alice.demo@example.com / Demo1234!",
       urls: [
         {
           label: "Live",
@@ -116,6 +118,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies: "HTML5, CSS, NODE, REACT, MATERIAL-UI, MONGODB",
       // industry: "Art & Design",
       date: "February 2022",
+      notice:
+        "Live demo on free hosting: if nobody has used it for a while it sleeps and the first load can take a minute. Allow location access to see nearby jobs. Demo login: alice.demo@example.com / Demo1234!",
       urls: [
         {
           label: "Live",

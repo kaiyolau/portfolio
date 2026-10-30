@@ -52,17 +52,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "JAKARTA EE, JAX-RS, EJB, JPA, WILDFLY, MYSQL, ASP.NET RAZOR PAGES, DOCKER, OPENSHIFT, JUNIT 5, REST ASSURED",
       date: "January 2026 - April 2026",
       notice:
-        "Live demo with sample data on free hosting: if nobody has used it for a while it goes to sleep, and the first load can take a few minutes while the Java server wakes up. Demo login: Employee ID 1 (admin), password: password. The original BCIT deployment ran on the school network (VPN) and is no longer reachable.",
+        "Live demo with sample data, self-hosted and served through a Cloudflare Tunnel, so it can occasionally be offline. Demo login: Employee ID 1 (admin), password: password. The original BCIT deployment ran on the school network (VPN) and is no longer reachable.",
       urls: [
         {
           label: "Live demo",
-          name: "https://pm-frontend-qlbs.onrender.com/",
-          link: "https://pm-frontend-qlbs.onrender.com/",
-        },
-        {
-          label: "API",
-          name: "https://pm-backend-prtx.onrender.com/",
-          link: "https://pm-backend-prtx.onrender.com/",
+          name: "https://pm.kylelau.ca/",
+          link: "https://pm.kylelau.ca/",
         },
         {
           label: "GitHub",

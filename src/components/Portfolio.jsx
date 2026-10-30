@@ -52,17 +52,17 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "JAKARTA EE, JAX-RS, EJB, JPA, WILDFLY, MYSQL, ASP.NET RAZOR PAGES, DOCKER, OPENSHIFT, JUNIT 5, REST ASSURED",
       date: "January 2026 - April 2026",
       notice:
-        "The deployed system ran on the BCIT school network (VPN required), and I no longer have VPN access. The Frontend and Backend links below only open from inside that network, so they will not load for outside visitors. The source code is on GitHub.",
+        "Live demo with sample data on free hosting: if nobody has used it for a while it goes to sleep, and the first load can take a few minutes while the Java server wakes up. Demo login: Employee ID 1 (admin), password: password. The original BCIT deployment ran on the school network (VPN) and is no longer reachable.",
       urls: [
         {
-          label: "Frontend (BCIT VPN only)",
-          name: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
-          link: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
+          label: "Live demo",
+          name: "https://pm-frontend-qlbs.onrender.com/",
+          link: "https://pm-frontend-qlbs.onrender.com/",
         },
         {
-          label: "Backend (BCIT VPN only)",
-          name: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
-          link: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
+          label: "API",
+          name: "https://pm-backend-prtx.onrender.com/",
+          link: "https://pm-backend-prtx.onrender.com/",
         },
         {
           label: "GitHub",
@@ -70,8 +70,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           link: "https://github.com/BCIT-4911/COMP-4911-project",
         },
       ],
-      thumbImage: "images/projects/comp4911_1.png",
-      sliderImages: ["images/projects/comp4911_2.png"],
+      thumbImage: "images/projects/comp4911_live_1.png",
+      sliderImages: [
+        "images/projects/comp4911_live_2.png",
+        "images/projects/comp4911_live_3.png",
+        "images/projects/comp4911_2.png",
+      ],
       categories: [filters.JAVA],
     },
     {
@@ -353,7 +357,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                   >
                     <div className="portfolio-box rounded">
                       <div className="portfolio-img rounded position-relative">
-                        {project.notice && (
+                        {project.vpnOnly && (
                           <span
                             className="badge bg-secondary position-absolute"
                             style={{ top: 10, left: 10, zIndex: 2 }}

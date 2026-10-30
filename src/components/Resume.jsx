@@ -1,5 +1,5 @@
 import React from "react";
-import resumeFile from "../documents/kyle_resume+coverLetter.pdf";
+import resumeFile from "../documents/Kyle_Lau_Resume.pdf";
 
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [

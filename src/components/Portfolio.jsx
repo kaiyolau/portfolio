@@ -47,14 +47,16 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies:
         "JAKARTA EE, JAX-RS, EJB, JPA, WILDFLY, MYSQL, ASP.NET RAZOR PAGES, DOCKER, OPENSHIFT, JUNIT 5, REST ASSURED",
       date: "January 2026 - April 2026",
+      notice:
+        "The deployed system ran on the BCIT school network (VPN required), and I no longer have VPN access. The Frontend and Backend links below only open from inside that network, so they will not load for outside visitors. The source code is on GitHub.",
       urls: [
         {
-          label: "Frontend",
+          label: "Frontend (BCIT VPN only)",
           name: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
           link: "http://frontend4911-liul-labs.apps.okd4.infoteach.ca/",
         },
         {
-          label: "Backend",
+          label: "Backend (BCIT VPN only)",
           name: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
           link: "https://backend-liul-labs.apps.okd4.infoteach.ca/",
         },
@@ -373,6 +375,15 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                   >
                     <div className="portfolio-box rounded">
                       <div className="portfolio-img rounded position-relative">
+                        {project.notice && (
+                          <span
+                            className="badge bg-secondary position-absolute"
+                            style={{ top: 10, left: 10, zIndex: 2 }}
+                          >
+                            <i className="fas fa-lock me-1" />
+                            School network only
+                          </span>
+                        )}
                         {project.featured && (
                           <span
                             className="badge bg-warning text-dark fw-600 position-absolute"

@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "kylelau-portfolio",
+  "compatibility_date": "2026-10-27",
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "kylelau.ca", "custom_domain": true },
+    { "pattern": "www.kylelau.ca", "custom_domain": true }
+  ]
+}

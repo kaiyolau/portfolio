@@ -17,6 +17,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     TYPESCRIPT: "TypeScript",
     PYTHON: "Python",
     JAVA: "Java",
+    DOTNET: ".NET",
     MATERIALUI: `Material-UI`,
     RUBY: "RubyOnRails",
     POSTGRES: "Postgresql",
@@ -72,6 +73,40 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/comp4911_2.png",
       ],
       categories: [filters.JAVA],
+    },
+    {
+      title: "Mini CMS (ASP.NET, React & Blazor)",
+      projectInfo:
+        "BCIT COMP 4870 team project (team of three): a content management system with an ASP.NET MVC and Web API backend (Identity, EF Core, role-based permissions, rich-text articles) and two separate frontends, React and client-side Blazor WebAssembly. My part: the React frontend, the REST API endpoints, rebuilding the frontend in Blazor WASM, moving the database to SQL Server, and running the services together with .NET Aspire.",
+      technologies:
+        "ASP.NET CORE (MVC, WEB API, IDENTITY), EF CORE, SQL SERVER, REACT, TYPESCRIPT, BLAZOR WEBASSEMBLY, .NET ASPIRE, DOCKER",
+      date: "January 2026 - March 2026",
+      notice:
+        "Live demo with sample data on free hosting: the first load after it has been idle can take a minute, and the data resets whenever the server restarts. Demo logins: a@a.a (admin), w@w.w or x@x.x (writers), password P@$$w0rd. The AI title generator is turned off in the demo (no API key). The source code is in a private course repository.",
+      urls: [
+        {
+          label: "React app",
+          name: "https://cms-demo-6yqi.onrender.com/app/",
+          link: "https://cms-demo-6yqi.onrender.com/app/",
+        },
+        {
+          label: "Blazor app",
+          name: "https://cms-demo-6yqi.onrender.com/blazor/",
+          link: "https://cms-demo-6yqi.onrender.com/blazor/",
+        },
+        {
+          label: "MVC admin",
+          name: "https://cms-demo-6yqi.onrender.com/",
+          link: "https://cms-demo-6yqi.onrender.com/",
+        },
+      ],
+      thumbImage: "images/projects/cms_1.png",
+      sliderImages: [
+        "images/projects/cms_2.png",
+        "images/projects/cms_3.png",
+        "images/projects/cms_4.png",
+      ],
+      categories: [filters.DOTNET, filters.REACT, filters.TYPESCRIPT, filters.JAVASCRIPT],
     },
     {
       title: "Journey Manager",
